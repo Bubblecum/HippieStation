@@ -34,7 +34,7 @@ obj/item/gun/ballistic/rifle/can_shoot()
     . = ..()
 
 obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
-    if (!bolt_locked)
+    if(!bolt_locked)
         to_chat(user, "<span class='notice'>The bolt is closed!</span>")
         return
     . = ..()
